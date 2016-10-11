@@ -1,0 +1,19 @@
+PODS:
+  - ProgressHUD (0.1.0)
+  - SVProgressHUD (2.0.3)
+
+DEPENDENCIES:
+  - ProgressHUD (from `../`)
+  - SVProgressHUD (~> 2.0.3)
+
+EXTERNAL SOURCES:
+  ProgressHUD:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ProgressHUD: bb48bf1ab3e00996d53b025f761ded5fc99215e4
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+
+PODFILE CHECKSUM: d83554cd9e1569dcace6bba681236e2258a007d1
+
+COCOAPODS: 1.1.0.beta.2

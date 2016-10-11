@@ -7,6 +7,7 @@
 //
 
 #import "LYViewController.h"
+#import "ProgressHUD.h"
 
 @interface LYViewController ()
 
@@ -18,6 +19,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+	[SVProgressHUD show];
 }
 
 - (void)didReceiveMemoryWarning

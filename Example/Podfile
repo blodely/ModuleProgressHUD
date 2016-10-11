@@ -1,7 +1,11 @@
+platform :ios, '9.3'
+
 use_frameworks!
 
 target 'ProgressHUD_Example' do
   pod 'ProgressHUD', :path => '../'
+  
+  pod 'SVProgressHUD', '~> 2.0.3'
 
   target 'ProgressHUD_Tests' do
     inherit! :search_paths
