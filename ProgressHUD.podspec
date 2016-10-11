@@ -20,7 +20,7 @@ ProgressHUD wrap lib with quick usage and style settings.
 
   s.ios.deployment_target = '9.3'
 
-  s.source_files = 'ProgressHUD/Classes/**/*', 'ProgressHUD/Configuration/**/*'
+  s.source_files = 'ProgressHUD/Classes/**/*', 'ProgressHUD/Configurations/*.plist'
   
   # s.resource_bundles = {
   #   'ProgressHUD' => ['ProgressHUD/Assets/*.png']
