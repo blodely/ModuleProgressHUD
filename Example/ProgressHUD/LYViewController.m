@@ -19,7 +19,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-//	[SVProgressHUD show];
+
+	NSLog(@"%@", [[ProgressHUD alloc] init]);
+	
 	[SVProgressHUD tryToShowErrorWithFormatStatus:@"%@", @1];
 	
 	[SVProgressHUD showSuccessWithFormatStatus:@"%@", @2];
