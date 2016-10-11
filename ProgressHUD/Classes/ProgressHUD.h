@@ -10,6 +10,6 @@
 #define ProgressHUD_h
 
 #import "SVProgressHUD.h"
-
+#import "SVProgressHUD+Additions.h"
 
 #endif /* ProgressHUD_h */

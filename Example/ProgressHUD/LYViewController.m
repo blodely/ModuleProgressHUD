@@ -19,7 +19,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-	[SVProgressHUD show];
+//	[SVProgressHUD show];
+	[SVProgressHUD tryToShowErrorWithFormatStatus:@"%@", @1];
+	
+	[SVProgressHUD showSuccessWithFormatStatus:@"%@", @2];
 }
 
 - (void)didReceiveMemoryWarning
