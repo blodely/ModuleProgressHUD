@@ -2,14 +2,14 @@
 //  ProgressHUD.h
 //  Pods
 //
-//  CREATED BY LUO YU ON 2016-10-11.
-//  COPYRIGHT © 2016 LUO YU. ALL RIGHTS RESERVED.
+//  CREATED BY LUO Yu ON 2016-10-11.
+//  COPYRIGHT (C) 2016 LUO YU. ALL RIGHTS RESERVED.
 //
 
-#ifndef ProgressHUD_h
-#define ProgressHUD_h
-
+#import <Foundation/Foundation.h>
 #import "SVProgressHUD.h"
 #import "SVProgressHUD+Additions.h"
 
-#endif /* ProgressHUD_h */
+@interface ProgressHUD : NSObject
+
+@end
