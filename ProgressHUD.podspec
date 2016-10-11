@@ -1,34 +1,24 @@
 #
 # Be sure to run `pod lib lint ProgressHUD.podspec' to ensure this is a
 # valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'ProgressHUD'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of ProgressHUD.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  s.name = 'ProgressHUD'
+  s.version = '1.0.0'
+  s.summary = 'ProgressHUD wrap lib with quick usage and style settings.'
+  s.description = <<-DESC
+ProgressHUD wrap lib with quick usage and style settings.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/ProgressHUD'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { '骆昱' => 'indie.luo@gmail.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/ProgressHUD.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.homepage = 'https://luoyu.space/hub'
+  s.license = { :type => 'MIT', :file => 'LICENSE' }
+  s.author = { 'Luo Yu' => 'indie.luo@gmail.com' }
+  s.source = { :git => 'http://192.168.7.2:8081/r/hacomp/ProgressHUD.git', :tag => s.version.to_s }
+  s.social_media_url = 'https://weibo.com/blodely'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.3'
 
   s.source_files = 'ProgressHUD/Classes/**/*'
   
@@ -39,4 +29,7 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+
+  s.dependency 'SVProgressHUD', '~> 2.0.3'
+
 end
