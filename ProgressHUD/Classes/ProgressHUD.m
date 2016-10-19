@@ -35,8 +35,12 @@ NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE 
 		NSLog(@"ProgressHUD ERROR\n\tCONFIGURATION FILE WAS NEVER FOUND.");
 	}
 	
-	NSLog(@"%@", conf);
+	// NSLog(@"%@", conf);
 	
+	// CONFIGURE HUD STYLE
+	[SVProgressHUD setDefaultStyle:[conf[@"sv-default-style"][@"conf-value"] integerValue]];
+	[SVProgressHUD setDefaultMaskType:[conf[@"sv-default-mask-type"][@"conf-value"] integerValue]];
+	[SVProgressHUD setMinimumDismissTimeInterval:[conf[@"sv-default-min-dismiss-interval"][@"conf-value"] doubleValue]];
 }
 
 @end
