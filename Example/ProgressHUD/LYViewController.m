@@ -13,6 +13,7 @@
 	
 	__weak IBOutlet UIButton *btnBgc;
 	__weak IBOutlet UIButton *btnHud;
+	__weak IBOutlet UIButton *btnSwitchStyle;
 }
 
 @end
@@ -32,6 +33,10 @@
 
 - (IBAction)showHUD:(id)sender {
 	[SVProgressHUD showSuccessWithFormatStatus:@"%@", @"bla bla bla bla bla\nbla bla bla"];
+}
+
+- (IBAction)switchStyle:(id)sender {
+	
 }
 
 // MARK: VIEW LIFE CYCLE

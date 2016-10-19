@@ -51,9 +51,13 @@
                                 <state key="normal" title="切换HUD样式">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="switchStyle:" destination="whP-gf-Uak" eventType="touchUpInside" id="YbA-0O-LpJ"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="zo2-Sm-Ul6" firstAttribute="top" secondItem="qks-wj-Ok7" secondAttribute="bottom" constant="16" id="4yq-yO-QDU"/>
                             <constraint firstAttribute="trailing" secondItem="zo2-Sm-Ul6" secondAttribute="trailing" constant="16" id="CrF-Gs-Jlj"/>
@@ -69,6 +73,7 @@
                     <connections>
                         <outlet property="btnBgc" destination="rkD-Kn-iuH" id="rH5-gn-608"/>
                         <outlet property="btnHud" destination="qks-wj-Ok7" id="KcS-XW-UL4"/>
+                        <outlet property="btnSwitchStyle" destination="zo2-Sm-Ul6" id="31u-Gg-u3w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
