@@ -42,9 +42,22 @@
                                     <action selector="showHUD:" destination="whP-gf-Uak" eventType="touchUpInside" id="80G-KZ-653"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zo2-Sm-Ul6">
+                                <color key="backgroundColor" red="1" green="0.58546906399999998" blue="0.0072833478759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="Afq-VI-4ma"/>
+                                    <constraint firstAttribute="height" constant="44" id="JY8-YV-3ss"/>
+                                </constraints>
+                                <state key="normal" title="切换HUD样式">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="zo2-Sm-Ul6" firstAttribute="top" secondItem="qks-wj-Ok7" secondAttribute="bottom" constant="16" id="4yq-yO-QDU"/>
+                            <constraint firstAttribute="trailing" secondItem="zo2-Sm-Ul6" secondAttribute="trailing" constant="16" id="CrF-Gs-Jlj"/>
+                            <constraint firstItem="zo2-Sm-Ul6" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="16" id="QBg-I3-xsb"/>
                             <constraint firstItem="qks-wj-Ok7" firstAttribute="top" secondItem="rkD-Kn-iuH" secondAttribute="bottom" constant="16" id="UrY-P0-wSp"/>
                             <constraint firstAttribute="trailing" secondItem="rkD-Kn-iuH" secondAttribute="trailing" constant="16" id="WTt-ES-GIA"/>
                             <constraint firstAttribute="trailing" secondItem="qks-wj-Ok7" secondAttribute="trailing" constant="16" id="cbq-lD-kAy"/>
