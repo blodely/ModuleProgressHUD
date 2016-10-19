@@ -21,6 +21,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		B6EC04881DB740A60004F984 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6EC04871DB740A60004F984 /* Launch Screen.storyboard */; };
 		BB10CB04EC427F8296D94F7A /* Pods_ProgressHUD_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B8F8D127B1F562114474BF3 /* Pods_ProgressHUD_Example.framework */; };
 		EDE16C21C238D780F479FEDE /* Pods_ProgressHUD_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DFE9015776232DEF2D9117 /* Pods_ProgressHUD_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		9823E444C73D3F849FE56329 /* Pods-ProgressHUD_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgressHUD_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProgressHUD_Tests/Pods-ProgressHUD_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9ABDC63D28F31E84B8E7C85D /* ProgressHUD.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ProgressHUD.podspec; path = ../ProgressHUD.podspec; sourceTree = "<group>"; };
 		B4561680E2C342534E879FB6 /* Pods-ProgressHUD_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgressHUD_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProgressHUD_Example/Pods-ProgressHUD_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B6EC04871DB740A60004F984 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		E81A4D067F778483EB1CB695 /* Pods-ProgressHUD_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProgressHUD_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProgressHUD_Tests/Pods-ProgressHUD_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +139,7 @@
 				6003F5A6195388D20070C39A /* LYViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				B6EC04871DB740A60004F984 /* Launch Screen.storyboard */,
 			);
 			name = "Example for ProgressHUD";
 			path = ProgressHUD;
@@ -278,6 +281,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				B6EC04881DB740A60004F984 /* Launch Screen.storyboard in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,7 +516,6 @@
 			baseConfigurationReference = 8637BDC51FD6B4E2F3CA837F /* Pods-ProgressHUD_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ProgressHUD/ProgressHUD-Prefix.pch";
 				INFOPLIST_FILE = "ProgressHUD/ProgressHUD-Info.plist";
@@ -528,7 +531,6 @@
 			baseConfigurationReference = B4561680E2C342534E879FB6 /* Pods-ProgressHUD_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ProgressHUD/ProgressHUD-Prefix.pch";
 				INFOPLIST_FILE = "ProgressHUD/ProgressHUD-Info.plist";
