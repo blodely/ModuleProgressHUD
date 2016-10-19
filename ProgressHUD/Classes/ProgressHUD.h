@@ -12,4 +12,6 @@
 
 @interface ProgressHUD : NSObject
 
++ (void)autoConfigure;
+
 @end

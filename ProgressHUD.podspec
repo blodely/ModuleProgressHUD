@@ -30,6 +30,9 @@ ProgressHUD wrap lib with quick usage and style settings.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 
+  s.frameworks = 'UIKit'
+
   s.dependency 'SVProgressHUD', '~> 2.0.3'
+  s.dependency 'FCFileManager', '~> 1.0.18'
 
 end
