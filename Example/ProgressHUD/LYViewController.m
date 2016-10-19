@@ -9,26 +9,44 @@
 #import "LYViewController.h"
 #import "ProgressHUD.h"
 
-@interface LYViewController ()
+@interface LYViewController () {
+	
+	__weak IBOutlet UIButton *btnBgc;
+	__weak IBOutlet UIButton *btnHud;
+}
 
 @end
 
 @implementation LYViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+// MARK: ACTIONS
 
-	NSLog(@"%@", [[ProgressHUD alloc] init]);
+- (IBAction)changeBgColor:(id)sender {
 	
-	[SVProgressHUD tryToShowErrorWithFormatStatus:@"%@", @1];
-	
-	[SVProgressHUD showSuccessWithFormatStatus:@"%@", @2];
+	if ([self.view.backgroundColor isEqual:[UIColor whiteColor]]) {
+		self.view.backgroundColor = [UIColor blackColor];
+	} else {
+		self.view.backgroundColor = [UIColor whiteColor];
+	}
 }
 
-- (void)didReceiveMemoryWarning
-{
+- (IBAction)showHUD:(id)sender {
+	[SVProgressHUD showSuccessWithFormatStatus:@"%@", @"bla bla bla bla bla\nbla bla bla"];
+}
+
+// MARK: VIEW LIFE CYCLE
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+	// Do any additional setup after loading the view, typically from a nib.
+	
+	btnBgc.layer.masksToBounds = btnHud.layer.masksToBounds = YES;
+	btnBgc.layer.cornerRadius = btnHud.layer.cornerRadius = 6;
+
+	[ProgressHUD autoConfigure];
+}
+
+- (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
