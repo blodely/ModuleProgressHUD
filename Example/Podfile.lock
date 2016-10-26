@@ -1,6 +1,6 @@
 PODS:
   - FCFileManager (1.0.18)
-  - ProgressHUD (1.0.0):
+  - ProgressHUD (1.0.1):
     - FCFileManager (~> 1.0.18)
     - SVProgressHUD (~> 2.0.3)
   - SVProgressHUD (2.0.3)
@@ -15,9 +15,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FCFileManager: 3d13576da1f709d37460bd7669cdf07b9d6d8bc3
-  ProgressHUD: 2434e9098caab30d3c94c036d81c45b3fc167601
+  ProgressHUD: 1df2fbbb163af119a786b2078204e3e655071af2
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
 
-PODFILE CHECKSUM: d83554cd9e1569dcace6bba681236e2258a007d1
+PODFILE CHECKSUM: c0f07f59afcc2ef0f10eb909b22584b4698a92ab
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.1
