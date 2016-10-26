@@ -18,7 +18,7 @@ ProgressHUD wrap lib with quick usage and style settings.
   s.source = { :git => 'http://192.168.7.2:8081/r/hacomp/ProgressHUD.git', :tag => s.version.to_s }
   s.social_media_url = 'https://weibo.com/blodely'
 
-  s.ios.deployment_target = '9.3'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'ProgressHUD/Classes/**/*', 'ProgressHUD/Configurations/*.plist'
   
