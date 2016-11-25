@@ -10,9 +10,11 @@ Pod::Spec.new do |s|
   s.summary = 'ProgressHUD wrap lib with quick usage and style settings.'
   s.description = <<-DESC
 ProgressHUD wrap lib with quick usage and style settings.
+1. SVProgressHUD
+2. MBProgressHUD
                        DESC
 
-  s.homepage = 'https://luoyu.space/hub'
+  s.homepage = 'https://github.com/blodely/ProgressHUD'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
   s.author = { 'Luo Yu' => 'indie.luo@gmail.com' }
   s.source = { :git => 'https://github.com/blodely/ProgressHUD.git', :tag => s.version.to_s }

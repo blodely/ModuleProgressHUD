@@ -7,13 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SVProgressHUD.h"
+#import <SVProgressHUD/SVProgressHUD.h>
 
 @interface ProgressHUD : NSObject
 
 + (void)autoConfigure;
 
 @end
+
+// MARK: - SVProgressHUD
 
 @interface SVProgressHUD (Additions)
 
