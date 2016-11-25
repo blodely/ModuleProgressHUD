@@ -6,7 +6,7 @@
 
 Pod::Spec.new do |s|
   s.name = 'ProgressHUD'
-  s.version = '1.0.1'
+  s.version = '1.0.2'
   s.summary = 'ProgressHUD wrap lib with quick usage and style settings.'
   s.description = <<-DESC
 ProgressHUD wrap lib with quick usage and style settings.
@@ -15,7 +15,7 @@ ProgressHUD wrap lib with quick usage and style settings.
   s.homepage = 'https://luoyu.space/hub'
   s.license = { :type => 'MIT', :file => 'LICENSE' }
   s.author = { 'Luo Yu' => 'indie.luo@gmail.com' }
-  s.source = { :git => 'http://192.168.7.2:8081/r/hacomp/ProgressHUD.git', :tag => s.version.to_s }
+  s.source = { :git => 'https://github.com/blodely/ProgressHUD.git', :tag => s.version.to_s }
   s.social_media_url = 'https://weibo.com/blodely'
 
   s.ios.deployment_target = '9.0'
