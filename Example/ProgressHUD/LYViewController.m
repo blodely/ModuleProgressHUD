@@ -7,7 +7,7 @@
 //
 
 #import "LYViewController.h"
-#import "ProgressHUD.h"
+#import <ProgressHUD/ProgressHUD.h>
 
 @interface LYViewController () {
 	
