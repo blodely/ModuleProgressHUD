@@ -6,12 +6,13 @@
 
 Pod::Spec.new do |s|
   s.name = 'ProgressHUD'
-  s.version = '1.0.2'
+  s.version = '1.0.3'
   s.summary = 'ProgressHUD wrap lib with quick usage and style settings.'
   s.description = <<-DESC
 ProgressHUD wrap lib with quick usage and style settings.
 1. SVProgressHUD
 2. MBProgressHUD
+3. Min-OS version iOS 8.0
                        DESC
 
   s.homepage = 'https://github.com/blodely/ProgressHUD'
@@ -20,7 +21,7 @@ ProgressHUD wrap lib with quick usage and style settings.
   s.source = { :git => 'https://github.com/blodely/ProgressHUD.git', :tag => s.version.to_s }
   s.social_media_url = 'https://weibo.com/blodely'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '8.0'
 
   s.source_files = 'ProgressHUD/Classes/**/*', 'ProgressHUD/Configurations/*.plist'
   
