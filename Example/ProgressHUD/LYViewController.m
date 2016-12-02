@@ -37,6 +37,9 @@
 
 - (IBAction)switchStyle:(id)sender {
 	
+	[[SVProgressHUD appearance] setDefaultStyle:[SVProgressHUD appearance].defaultStyle == SVProgressHUDStyleDark ? SVProgressHUDStyleLight : SVProgressHUDStyleDark];
+	
+	[SVProgressHUD showSuccessWithStatus:@"style changed"];
 }
 
 // MARK: VIEW LIFE CYCLE
