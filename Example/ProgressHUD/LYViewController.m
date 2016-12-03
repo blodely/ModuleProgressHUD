@@ -48,8 +48,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 	
-	btnBgc.layer.masksToBounds = btnHud.layer.masksToBounds = YES;
-	btnBgc.layer.cornerRadius = btnHud.layer.cornerRadius = 6;
+	btnBgc.layer.masksToBounds = btnHud.layer.masksToBounds = btnSwitchStyle.layer.masksToBounds = YES;
+	btnBgc.layer.cornerRadius = btnHud.layer.cornerRadius = btnSwitchStyle.layer.cornerRadius = 6;
 
 	[ProgressHUD autoConfigure];
 }
