@@ -1,4 +1,4 @@
-# ProgressHUD
+# ModuleProgressHUD
 
 ## Example
 
@@ -8,11 +8,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-ProgressHUD is available through [Private CocoaPods](https://github.com/blodely/LYSpecs). To install
+ModuleProgressHUD is available through [Private CocoaPods](https://github.com/blodely/LYSpecs). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "ProgressHUD"
+pod "ModuleProgressHUD"
 ```
 
 ## Author
@@ -21,4 +21,5 @@ pod "ProgressHUD"
 
 ## License
 
-ProgressHUD is available under the MIT license. See the LICENSE file for more info.
+ModuleProgressHUD is available under the MIT license. See the LICENSE file for more info.
+

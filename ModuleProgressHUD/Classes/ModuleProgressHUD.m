@@ -1,19 +1,19 @@
 //
-//  ProgressHUD.m
+//  ModuleProgressHUD.m
 //  LUO YU
 //
 //  CREATED BY LUO Yu ON 2013-07-23.
 //  COPYRIGHT (C) 2013 LUO YU. ALL RIGHTS RESERVED.
 //
 
-#import "ProgressHUD.h"
+#import "ModuleProgressHUD.h"
 #import "FCFileManager.h"
 
-NSString *const LIB_PROGRESSHUD_BUNDLE_ID = @"org.cocoapods.ProgressHUD";
+NSString *const LIB_PROGRESSHUD_BUNDLE_ID = @"org.cocoapods.ModuleProgressHUD";
 NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE CHANGED
 
-@implementation ProgressHUD
-
+@implementation ModuleProgressHUD
+	
 + (void)autoConfigure {
 	
 	NSString *confpath;
@@ -22,7 +22,7 @@ NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE 
 	
 	if (confpath == nil || [confpath isEqualToString:@""] == YES || [FCFileManager isFileItemAtPath:confpath] == NO) {
 		
-		NSLog(@"ProgressHUD WARNING\n\tAPP CONFIGURATION FILE WAS NOT FOUND.\n\t%@", confpath);
+		NSLog(@"ModuleProgressHUD WARNING\n\tAPP CONFIGURATION FILE WAS NOT FOUND.\n\t%@", confpath);
 		
 		// FALLBACK TO LIB DEFAULT
 		confpath = [[NSBundle bundleWithIdentifier:LIB_PROGRESSHUD_BUNDLE_ID] pathForResource:NAME_CONF_PROGRESS_HUD ofType:@"plist"];
@@ -32,7 +32,7 @@ NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE 
 	NSDictionary *conf = [FCFileManager readFileAtPathAsDictionary:confpath];
 	
 	if (conf == nil) {
-		NSLog(@"ProgressHUD ERROR\n\tCONFIGURATION FILE WAS NEVER FOUND.");
+		NSLog(@"ModuleProgressHUD ERROR\n\tCONFIGURATION FILE WAS NEVER FOUND.");
 	}
 	
 	// NSLog(@"%@", conf);
@@ -42,11 +42,11 @@ NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE 
 	[SVProgressHUD setDefaultMaskType:[conf[@"sv-default-mask-type"][@"conf-value"] integerValue]];
 	[SVProgressHUD setMinimumDismissTimeInterval:[conf[@"sv-default-min-dismiss-interval"][@"conf-value"] doubleValue]];
 }
-
+	
 @end
 
 @implementation SVProgressHUD (Additions)
-
+	
 // SHOW ERROR STATUS WITH A STRING USING C PRINTF-STYLE FORMATTING
 + (void)showErrorWithFormatStatus:(NSString *)format, ... {
 	
@@ -68,7 +68,7 @@ NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE 
 		[SVProgressHUD showErrorWithStatus:@""];
 	}
 }
-
+	
 // SHOW SUCCESS STATUS WITH A STRING USING C PRINTG-STYLE FORMATTING
 + (void)showSuccessWithFormatStatus:(NSString *)format, ... {
 	
@@ -91,7 +91,7 @@ NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE 
 	}
 	
 }
-
+	
 // SHOW HUD WHEN IT'S VISIBLE
 + (void)tryToShowErrorWithFormatStatus:(NSString *)format, ... {
 	
@@ -116,5 +116,5 @@ NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE 
 	}
 	
 }
-
+	
 @end

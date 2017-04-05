@@ -1,9 +1,9 @@
 //
-//  ProgressHUDTests.m
-//  ProgressHUDTests
+//  ModuleProgressHUDTests.m
+//  ModuleProgressHUDTests
 //
-//  Created by 骆昱 on 10/11/2016.
-//  Copyright (c) 2016 骆昱. All rights reserved.
+//  Created by blodely on 04/05/2017.
+//  Copyright (c) 2017 blodely. All rights reserved.
 //
 
 @import XCTest;

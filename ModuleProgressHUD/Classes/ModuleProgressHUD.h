@@ -1,5 +1,5 @@
 //
-//  ProgressHUD.h
+//  ModuleProgressHUD.h
 //  LUO YU
 //
 //  CREATED BY LUO Yu ON 2013-07-23.
@@ -9,16 +9,16 @@
 #import <Foundation/Foundation.h>
 #import <SVProgressHUD/SVProgressHUD.h>
 
-@interface ProgressHUD : NSObject
-
+@interface ModuleProgressHUD : NSObject
+	
 + (void)autoConfigure;
-
+	
 @end
 
 // MARK: - SVProgressHUD
 
 @interface SVProgressHUD (Additions)
-
+	
 // SHOW ERROR STATUS WITH A STRING USING C PRINTG-STYLE FORMATTING
 + (void)showErrorWithFormatStatus:(NSString *)format, ... NS_FORMAT_FUNCTION(1,2);
 
@@ -27,6 +27,5 @@
 
 // SHOW HUD WHEN IT'S VISIBLE
 + (void)tryToShowErrorWithFormatStatus:(NSString *)format, ... NS_FORMAT_FUNCTION(1,2);
-
-
+	
 @end

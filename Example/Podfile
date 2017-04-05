@@ -2,12 +2,10 @@ platform :ios, '8.0'
 
 use_frameworks!
 
-target 'ProgressHUD_Example' do
-  pod 'ProgressHUD', :path => '../'
-  
-  target 'ProgressHUD_Tests' do
-    inherit! :search_paths
+target 'ModuleProgressHUD_Example' do
+	pod 'ModuleProgressHUD', :path => '../'
 
-    
-  end
+	target 'ModuleProgressHUD_Tests' do
+		inherit! :search_paths
+	end
 end

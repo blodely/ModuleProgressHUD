@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="wQg-tq-qST">
+            <objects>
+                <viewController id="whP-gf-Uak" customClass="LYViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDr-My-9Ns">
+                                <rect key="frame" x="16" y="100" width="343" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.58546906399999998" blue="0.0072833478759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="aoZ-Nu-DyW"/>
+                                </constraints>
+                                <state key="normal" title="更改背景色">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeBgColor:" destination="whP-gf-Uak" eventType="touchUpInside" id="Aos-R9-6ZQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Byl-4a-9KU">
+                                <rect key="frame" x="16" y="160" width="343" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.58546906399999998" blue="0.0072833478759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="QkM-5P-q5i"/>
+                                </constraints>
+                                <state key="normal" title="显示一条HUD">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showHUD:" destination="whP-gf-Uak" eventType="touchUpInside" id="aXh-Yt-SXT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="swq-iy-Qwh">
+                                <rect key="frame" x="16" y="220" width="343" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.58546906399999998" blue="0.0072833478759999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="0XX-ci-hjs"/>
+                                    <constraint firstAttribute="height" constant="44" id="I4E-hz-8tK"/>
+                                </constraints>
+                                <state key="normal" title="切换HUD样式">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="switchStyle:" destination="whP-gf-Uak" eventType="touchUpInside" id="fyk-4N-qle"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Byl-4a-9KU" firstAttribute="trailing" secondItem="fDr-My-9Ns" secondAttribute="trailing" id="FbL-9X-A1z"/>
+                            <constraint firstAttribute="trailing" secondItem="fDr-My-9Ns" secondAttribute="trailing" constant="16" id="FuW-po-9JI"/>
+                            <constraint firstItem="swq-iy-Qwh" firstAttribute="trailing" secondItem="Byl-4a-9KU" secondAttribute="trailing" id="NA0-jM-FpB"/>
+                            <constraint firstItem="fDr-My-9Ns" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="80" id="Tnq-M1-NLR"/>
+                            <constraint firstItem="Byl-4a-9KU" firstAttribute="leading" secondItem="fDr-My-9Ns" secondAttribute="leading" id="Vgv-3s-NLP"/>
+                            <constraint firstItem="Byl-4a-9KU" firstAttribute="top" secondItem="fDr-My-9Ns" secondAttribute="bottom" constant="16" id="ZMd-Df-hRX"/>
+                            <constraint firstItem="swq-iy-Qwh" firstAttribute="leading" secondItem="Byl-4a-9KU" secondAttribute="leading" id="gJx-97-Ghi"/>
+                            <constraint firstItem="fDr-My-9Ns" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="16" id="uIo-yz-oQh"/>
+                            <constraint firstItem="swq-iy-Qwh" firstAttribute="top" secondItem="Byl-4a-9KU" secondAttribute="bottom" constant="16" id="v3h-DM-xap"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="433"/>
+        </scene>
+    </scenes>
+</document>
