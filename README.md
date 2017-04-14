@@ -8,7 +8,13 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-ModuleProgressHUD is available through [Private CocoaPods](https://github.com/blodely/LYSpecs). To install
+ModuleProgressHUD is available through [Private CocoaPods](https://github.com/blodely/LYSpecs). 
+
+```
+pod repo add LYSpecs https://github.com/blodely/LYSpecs.git
+```
+
+To install
 it, simply add the following line to your Podfile:
 
 ```ruby
