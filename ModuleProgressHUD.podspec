@@ -14,16 +14,16 @@ Pod::Spec.new do |s|
 ProgressHUD wrap lib with quick usage and style settings.
 1. SVProgressHUD
 2. MBProgressHUD(removed for now)
-3. Min-OS version iOS 8.0
+3. Min-OS version iOS 7.0
 						DESC
 
 	s.homepage         = 'https://github.com/blodely/ModuleProgressHUD'
 	s.license          = { :type => 'MIT', :file => 'LICENSE' }
-	s.author           = { 'blodely' => 'indie.luo@gmail.com' }
+	s.author           = { 'Luo Yu' => 'indie.luo@gmail.com' }
 	s.source           = { :git => 'https://github.com/blodely/ModuleProgressHUD.git', :tag => s.version.to_s }
 	s.social_media_url = 'https://weibo.com/blodely'
 
-	s.ios.deployment_target = '8.0'
+	s.ios.deployment_target = '7.0'
 
 	s.source_files = 'ModuleProgressHUD/Classes/**/*', 'ModuleProgressHUD/Configurations/*.plist'
 
