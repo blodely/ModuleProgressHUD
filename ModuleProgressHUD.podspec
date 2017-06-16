@@ -27,9 +27,9 @@ ProgressHUD wrap lib with quick usage and style settings.
 
 	s.source_files = 'ModuleProgressHUD/Classes/**/*', 'ModuleProgressHUD/Configurations/*.plist'
 
-	# s.resource_bundles = {
-	#   'ModuleProgressHUD' => ['ModuleProgressHUD/Assets/*.png']
-	# }
+	s.resource_bundles = {
+		'ModuleProgressHUD' => ['ModuleProgressHUD/Assets/*.png']
+	}
 
 	# s.public_header_files = 'Pod/Classes/**/*.h'
 
