@@ -33,5 +33,7 @@ Carthage
 Pods/
 Podfile.lock
 
+xcshareddata/
+
 *.xcworkspace
 
