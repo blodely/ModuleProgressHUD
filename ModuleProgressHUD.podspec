@@ -7,7 +7,7 @@
 
 Pod::Spec.new do |s|
 	s.name = 'ModuleProgressHUD'
-	s.version = '1.0.6'
+	s.version = '1.0.7'
 	s.summary = 'Module ProgressHUD wrap lib with quick usage and style settings.'
 
 	s.description      = <<-DESC
@@ -33,7 +33,7 @@ ProgressHUD wrap lib with quick usage and style settings.
 
 	# s.public_header_files = 'Pod/Classes/**/*.h'
 
-	s.frameworks = 'UIKit'
+	s.ios.frameworks = 'UIKit'
 
 	s.dependency 'SVProgressHUD', '~> 2.1.2'
 	s.dependency 'FCFileManager', '~> 1.0.18'
