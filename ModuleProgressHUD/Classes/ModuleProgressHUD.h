@@ -28,4 +28,6 @@
 // SHOW HUD WHEN IT'S VISIBLE
 + (void)tryToShowErrorWithFormatStatus:(NSString *)format, ... NS_FORMAT_FUNCTION(1,2);
 	
++ (void)showMessage:(NSString *)message withDelay:(NSInteger)seconds;
+	
 @end

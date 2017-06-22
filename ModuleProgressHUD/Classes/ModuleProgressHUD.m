@@ -117,4 +117,11 @@ NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE 
 	
 }
 	
++ (void)showMessage:(NSString *)message withDelay:(NSInteger)seconds {
+	
+	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(seconds * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+		[SVProgressHUD showImage:nil status:message];
+	});
+}
+	
 @end
