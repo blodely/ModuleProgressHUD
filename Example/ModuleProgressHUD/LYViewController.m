@@ -33,6 +33,8 @@
 	
 - (IBAction)showHUD:(id)sender {
 	[SVProgressHUD showSuccessWithFormatStatus:@"%@", @"bla bla bla bla bla\nbla bla bla"];
+	
+//	[SVProgressHUD showProgressHideAfter:2];
 }
 	
 - (IBAction)switchStyle:(id)sender {

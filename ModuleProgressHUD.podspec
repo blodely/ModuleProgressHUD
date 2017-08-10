@@ -7,7 +7,7 @@
 
 Pod::Spec.new do |s|
 	s.name = 'ModuleProgressHUD'
-	s.version = '1.0.8'
+	s.version = '1.0.9'
 	s.summary = 'Module ProgressHUD wrap lib with quick usage and style settings.'
 
 	s.description      = <<-DESC
