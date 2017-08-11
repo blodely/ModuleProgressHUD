@@ -21,6 +21,24 @@ it, simply add the following line to your Podfile:
 pod "ModuleProgressHUD"
 ```
 
+## Usage
+
+### style auto configuration
+
+Copy `conf-progress-hud.plist` file to your project, and make desired changes.
+
+Call `[ModuleProgressHUD autoConfigure]`; once in app delegate.
+
+### show message with format string
+
+```
++showErrorWithFormatStatus:...
++showSuccessWithFormatStatus:...
++tryToShowErrorWithFormatStatus:...
++showMessage:withDelay:
++showProgressHideAfter:
+```
+
 ## Author
 
 骆昱, indie.luo@gmail.com
