@@ -32,9 +32,14 @@ Call `[ModuleProgressHUD autoConfigure]`; once in app delegate.
 ### show message with format string
 
 ```
+
+# show message with format string
 +showErrorWithFormatStatus:...
 +showSuccessWithFormatStatus:...
+
+# show message only when there's a hud view already in display
 +tryToShowErrorWithFormatStatus:...
+
 +showMessage:withDelay:
 +showProgressHideAfter:
 ```
