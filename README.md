@@ -41,6 +41,8 @@ Call `[ModuleProgressHUD autoConfigure]`; once in app delegate.
 +tryToShowErrorWithFormatStatus:...
 
 +showMessage:withDelay:
+
+# show a progress pie and hide it
 +showProgressHideAfter:
 ```
 
