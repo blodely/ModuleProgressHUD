@@ -40,6 +40,7 @@ Call `[ModuleProgressHUD autoConfigure]`; once in app delegate.
 # show message only when there's a hud view already in display
 +tryToShowErrorWithFormatStatus:...
 
+# show a message string with delay
 +showMessage:withDelay:
 
 # show a progress pie and hide it
