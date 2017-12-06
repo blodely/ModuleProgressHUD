@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 	s.description = <<-DESC
 ProgressHUD wrap lib with quick usage and style settings.
 1. SVProgressHUD
-2. MBProgressHUD
+2. MBProgressHUD(removed for now)
 3. Min-OS version iOS 8.0
 					   DESC
 
