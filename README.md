@@ -10,7 +10,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ModuleProgressHUD is available through CocoaPods. 
 
-```
+```bash
 pod search ModuleProgressHUD
 
 # -> ModuleProgressHUD (1.0.9)
