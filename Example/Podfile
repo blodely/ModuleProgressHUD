@@ -5,7 +5,4 @@ use_frameworks!
 target 'ModuleProgressHUD_Example' do
 	pod 'ModuleProgressHUD', :path => '../'
 
-	target 'ModuleProgressHUD_Tests' do
-		inherit! :search_paths
-	end
 end
