@@ -2,7 +2,7 @@ platform :ios, '8.0'
 
 use_frameworks!
 
-target 'ModuleProgressHUD_Example' do
+target 'ProgressHUD' do
 	pod 'ModuleProgressHUD', :path => '../'
 
 end

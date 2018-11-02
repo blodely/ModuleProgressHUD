@@ -24,7 +24,7 @@
 		3B490BA2A077AB26847A0DB0 /* Pods-ModuleProgressHUD_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleProgressHUD_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModuleProgressHUD_Example/Pods-ModuleProgressHUD_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3C4F32B10997E659264E06F2 /* Pods_ModuleProgressHUD_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModuleProgressHUD_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F5F1D8785957F88C45EEB77 /* Pods-ModuleProgressHUD_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModuleProgressHUD_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModuleProgressHUD_Example/Pods-ModuleProgressHUD_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* ModuleProgressHUD_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModuleProgressHUD_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* ProgressHUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProgressHUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -77,7 +77,7 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* ModuleProgressHUD_Example.app */,
+				6003F58A195388D20070C39A /* ProgressHUD.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,9 +146,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6003F589195388D20070C39A /* ModuleProgressHUD_Example */ = {
+		6003F589195388D20070C39A /* ProgressHUD */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "ModuleProgressHUD_Example" */;
+			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "ProgressHUD" */;
 			buildPhases = (
 				500ECCF09D6C9ADC091DFA17 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
@@ -160,9 +160,9 @@
 			);
 			dependencies = (
 			);
-			name = ModuleProgressHUD_Example;
+			name = ProgressHUD;
 			productName = ModuleProgressHUD;
-			productReference = 6003F58A195388D20070C39A /* ModuleProgressHUD_Example.app */;
+			productReference = 6003F58A195388D20070C39A /* ProgressHUD.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -193,7 +193,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6003F589195388D20070C39A /* ModuleProgressHUD_Example */,
+				6003F589195388D20070C39A /* ProgressHUD */,
 			);
 		};
 /* End PBXProject section */
@@ -415,7 +415,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "ModuleProgressHUD_Example" */ = {
+		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "ProgressHUD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6003F5C0195388D20070C39A /* Debug */,

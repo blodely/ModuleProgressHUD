@@ -64,8 +64,12 @@
 	
 	[SVProgressHUD showSuccessWithStatus:@"style changed"];
 }
+
+- (IBAction)showNetworkingError:(id)sender {
+	[SVProgressHUD showErrorNetworkFailure];
+}
 	
-	// MARK: VIEW LIFE CYCLE
+// MARK: VIEW LIFE CYCLE
 	
 - (void)viewDidLoad {
 	[super viewDidLoad];

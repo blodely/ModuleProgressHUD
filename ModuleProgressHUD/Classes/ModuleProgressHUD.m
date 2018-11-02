@@ -63,7 +63,36 @@ NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE 
 	[SVProgressHUD setDefaultMaskType:[conf[@"sv-default-mask-type"][@"conf-value"] integerValue]];
 	[SVProgressHUD setMinimumDismissTimeInterval:[conf[@"sv-default-min-dismiss-interval"][@"conf-value"] doubleValue]];
 }
+
++ (id)confValueFor:(NSString *)valueKey {
 	
+	if (valueKey == nil || [valueKey isKindOfClass:[NSString class]] == NO || [valueKey isEqualToString:@""]) {
+		// NOT PASSED VALIDATION
+		return nil;
+	}
+	
+	NSString *confpath;
+	
+	confpath = [[NSBundle mainBundle] pathForResource:NAME_CONF_PROGRESS_HUD ofType:@"plist"];
+	
+	if (confpath == nil || [confpath isEqualToString:@""] == YES || [FCFileManager isFileItemAtPath:confpath] == NO) {
+		
+		NSLog(@"ModuleProgressHUD WARNING\n\tAPP CONFIGURATION FILE WAS NOT FOUND.\n\t%@", confpath);
+		
+		// FALLBACK TO LIB DEFAULT
+		confpath = [[NSBundle bundleWithIdentifier:LIB_PROGRESSHUD_BUNDLE_ID] pathForResource:NAME_CONF_PROGRESS_HUD ofType:@"plist"];
+	}
+	
+	// TRY TO READ APP CONFIGURATION
+	NSDictionary *conf = [FCFileManager readFileAtPathAsDictionary:confpath];
+	
+	if (conf == nil) {
+		NSLog(@"ModuleProgressHUD ERROR\n\tCONFIGURATION FILE WAS NEVER FOUND.");
+	}
+	
+	return conf[valueKey][@"conf-value"];
+}
+
 @end
 
 @implementation SVProgressHUD (Additions)
@@ -151,6 +180,10 @@ NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE 
 	dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(seconds * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 		[SVProgressHUD dismiss];
 	});
+}
+
++ (void)showErrorNetworkFailure {
+	[SVProgressHUD showErrorWithStatus:[ModuleProgressHUD confValueFor:@"sv-networking-failure-message"]];
 }
 	
 @end

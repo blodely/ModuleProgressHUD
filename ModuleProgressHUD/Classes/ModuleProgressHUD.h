@@ -52,5 +52,7 @@
 + (void)showMessage:(NSString *)message withDelay:(NSInteger)seconds;
 
 + (void)showProgressHideAfter:(NSInteger)seconds;
-	
+
++ (void)showErrorNetworkFailure;
+
 @end
