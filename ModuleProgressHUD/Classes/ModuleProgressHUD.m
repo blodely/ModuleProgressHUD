@@ -28,7 +28,7 @@
 //
 
 #import "ModuleProgressHUD.h"
-#import "FCFileManager.h"
+
 
 NSString *const LIB_PROGRESSHUD_BUNDLE_ID = @"org.cocoapods.ModuleProgressHUD";
 NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE CHANGED
@@ -41,7 +41,9 @@ NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE 
 	
 	confpath = [[NSBundle mainBundle] pathForResource:NAME_CONF_PROGRESS_HUD ofType:@"plist"];
 	
-	if (confpath == nil || [confpath isEqualToString:@""] == YES || [FCFileManager isFileItemAtPath:confpath] == NO) {
+	if (confpath == nil ||
+		[confpath isEqualToString:@""] == YES ||
+		[[NSFileManager defaultManager] fileExistsAtPath:confpath] == NO) {
 		
 		NSLog(@"ModuleProgressHUD WARNING\n\tAPP CONFIGURATION FILE WAS NOT FOUND.\n\t%@", confpath);
 		
@@ -50,7 +52,7 @@ NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE 
 	}
 	
 	// TRY TO READ APP CONFIGURATION
-	NSDictionary *conf = [FCFileManager readFileAtPathAsDictionary:confpath];
+	NSDictionary *conf = [NSDictionary dictionaryWithContentsOfFile:confpath];
 	
 	if (conf == nil) {
 		NSLog(@"ModuleProgressHUD ERROR\n\tCONFIGURATION FILE WAS NEVER FOUND.");
@@ -66,7 +68,9 @@ NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE 
 
 + (id)confValueFor:(NSString *)valueKey {
 	
-	if (valueKey == nil || [valueKey isKindOfClass:[NSString class]] == NO || [valueKey isEqualToString:@""]) {
+	if (valueKey == nil
+		|| [valueKey isKindOfClass:[NSString class]] == NO
+		|| [valueKey isEqualToString:@""]) {
 		// NOT PASSED VALIDATION
 		return nil;
 	}
@@ -75,16 +79,19 @@ NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE 
 	
 	confpath = [[NSBundle mainBundle] pathForResource:NAME_CONF_PROGRESS_HUD ofType:@"plist"];
 	
-	if (confpath == nil || [confpath isEqualToString:@""] == YES || [FCFileManager isFileItemAtPath:confpath] == NO) {
+	if (confpath == nil
+		|| [confpath isEqualToString:@""] == YES
+		|| [[NSFileManager defaultManager] fileExistsAtPath:confpath] == NO) {
 		
 		NSLog(@"ModuleProgressHUD WARNING\n\tAPP CONFIGURATION FILE WAS NOT FOUND.\n\t%@", confpath);
 		
 		// FALLBACK TO LIB DEFAULT
-		confpath = [[NSBundle bundleWithIdentifier:LIB_PROGRESSHUD_BUNDLE_ID] pathForResource:NAME_CONF_PROGRESS_HUD ofType:@"plist"];
+		confpath = [[NSBundle bundleWithIdentifier:LIB_PROGRESSHUD_BUNDLE_ID]
+					pathForResource:NAME_CONF_PROGRESS_HUD ofType:@"plist"];
 	}
 	
 	// TRY TO READ APP CONFIGURATION
-	NSDictionary *conf = [FCFileManager readFileAtPathAsDictionary:confpath];
+	NSDictionary *conf = [NSDictionary dictionaryWithContentsOfFile:confpath];
 	
 	if (conf == nil) {
 		NSLog(@"ModuleProgressHUD ERROR\n\tCONFIGURATION FILE WAS NEVER FOUND.");

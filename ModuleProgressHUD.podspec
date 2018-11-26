@@ -36,6 +36,5 @@ ProgressHUD wrap lib with quick usage and style settings.
 	s.ios.frameworks = 'UIKit'
 
 	s.dependency 'SVProgressHUD', '~> 2.1.2'
-	s.dependency 'FCFileManager', '~> 1.0.18'
 
 end
