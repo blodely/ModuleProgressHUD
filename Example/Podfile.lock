@@ -1,7 +1,5 @@
 PODS:
-  - FCFileManager (1.0.18)
-  - ModuleProgressHUD (1.0.9):
-    - FCFileManager (~> 1.0.18)
+  - ModuleProgressHUD (1.0.10):
     - SVProgressHUD (~> 2.1.2)
   - SVProgressHUD (2.1.2)
 
@@ -10,7 +8,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - FCFileManager
     - SVProgressHUD
 
 EXTERNAL SOURCES:
@@ -18,10 +15,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FCFileManager: 3d13576da1f709d37460bd7669cdf07b9d6d8bc3
-  ModuleProgressHUD: 1a95a28e9d48763f1012d579cd116c3d29b91c9b
+  ModuleProgressHUD: 3150ebb2db50c0df08cc95eb7737d0807f38ddf2
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: ee3a313e9c59e64cb34ad249f2a6d0b9748a4412
+PODFILE CHECKSUM: f53b0faaec513afbf8167661602d53ff45db5f12
 
 COCOAPODS: 1.5.3
