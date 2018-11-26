@@ -39,20 +39,46 @@
 // MARK: - SVProgressHUD
 
 @interface SVProgressHUD (Additions)
-	
-// SHOW ERROR STATUS WITH A STRING USING C PRINTG-STYLE FORMATTING
+
+/**
+ SHOW ERROR STATUS WITH A STRING USING C PRINTG-STYLE FORMATTING
+
+ @param format format string
+ */
 + (void)showErrorWithFormatStatus:(NSString *)format, ... NS_FORMAT_FUNCTION(1,2);
 
-// SHOW SUCCESS STATUS WITH A STRING USING C PRINTG-STYLE FORMATTING
+/**
+ SHOW SUCCESS STATUS WITH A STRING USING C PRINTG-STYLE FORMATTING
+
+ @param format format string
+ */
 + (void)showSuccessWithFormatStatus:(NSString *)format, ... NS_FORMAT_FUNCTION(1, 2);
 
-// SHOW HUD WHEN IT'S VISIBLE
+/**
+ SHOW HUD WHEN IT'S VISIBLE
+
+ @param format format string
+ */
 + (void)tryToShowErrorWithFormatStatus:(NSString *)format, ... NS_FORMAT_FUNCTION(1,2);
-	
+
+/**
+ SHOW A MESSAGE WITH AUTO DISMISSION
+
+ @param message message string
+ @param seconds seconds to display
+ */
 + (void)showMessage:(NSString *)message withDelay:(NSInteger)seconds;
 
+/**
+ SHOW AN AUTO DISMISSED PROGRESS HUD WITH DISPLAY DURATION
+
+ @param seconds secounds to display
+ */
 + (void)showProgressHideAfter:(NSInteger)seconds;
 
+/**
+ SHOW A NETWORKING FAILED ERROR PROGRESS HUD
+ */
 + (void)showErrorNetworkFailure;
 
 @end
