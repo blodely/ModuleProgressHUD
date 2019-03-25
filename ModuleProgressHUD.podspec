@@ -36,5 +36,6 @@ ProgressHUD wrap lib with quick usage and style settings.
 	s.ios.frameworks = 'UIKit'
 
 	s.dependency 'SVProgressHUD', '~> 2.1.2'
+	s.dependency 'MBProgressHUD'
 
 end
