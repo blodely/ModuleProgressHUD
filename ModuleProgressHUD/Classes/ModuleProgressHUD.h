@@ -29,6 +29,8 @@
 
 #import <Foundation/Foundation.h>
 #import <SVProgressHUD/SVProgressHUD.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+
 
 @interface ModuleProgressHUD : NSObject
 	
