@@ -223,10 +223,11 @@ NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE 
 	MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
 	hud.mode = MBProgressHUDModeText;
 	hud.removeFromSuperViewOnHide = YES;
+	hud.margin = 12;
 	
 	hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
 	hud.bezelView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.75];
-	[hud.bezelView roundedCornerRadius:28];
+	[hud.bezelView roundedCornerRadius:20];
 	
 	hud.label.textColor = [UIColor whiteColor];
 	hud.label.font = [UIFont systemFontOfSize:14];
