@@ -104,4 +104,12 @@
  */
 + (void)showSuccessWithFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(1, 2);
 
+/**
+ SHOW SUCCESS WITH MBProgressHUD, TITLE AND SUBTITLE
+
+ @param title title string
+ @param subtitle subtitle string
+ */
++ (void)showSuccessWithTitle:(NSString *)title subtitle:(NSString *)subtitle;
+
 @end
