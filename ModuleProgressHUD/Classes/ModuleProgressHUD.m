@@ -28,6 +28,7 @@
 //
 
 #import "ModuleProgressHUD.h"
+#import <LYCategory/LYCategory.h>
 
 
 NSString *const LIB_PROGRESSHUD_BUNDLE_ID = @"org.cocoapods.ModuleProgressHUD";
@@ -199,5 +200,41 @@ NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE 
 // MARK: - MBProgressHUD
 
 @implementation MBProgressHUD (Additions)
+
++ (void)showHintWithFormat:(NSString *)format, ... {
+	va_list args;
+	id ret;
+	
+	va_start(args, format);
+	if (format == nil) {
+		ret = nil;
+	} else {
+		ret = [[NSString alloc] initWithFormat:format arguments:args];
+	}
+	
+	va_end(args);
+	
+	if (ret == nil || [ret isEqualToString:@""]) {
+		return;
+	}
+	
+	UIView *view = [[UIApplication sharedApplication].windows lastObject];
+	MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
+	hud.mode = MBProgressHUDModeText;
+	hud.removeFromSuperViewOnHide = YES;
+	
+	hud.bezelView.style = MBProgressHUDBackgroundStyleSolidColor;
+	hud.bezelView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.75];
+	[hud.bezelView roundedCornerRadius:28];
+	
+	hud.label.textColor = [UIColor whiteColor];
+	hud.label.font = [UIFont systemFontOfSize:14];
+	
+	hud.label.text = ret;
+	
+	hud.offset = (CGPoint){0, HEIGHT * 0.4};
+	
+	[hud hideAnimated:YES afterDelay:MIN(MAX((CGFloat)(((NSString *)ret).length) * 0.06 + 0.5, 1), 5)];
+}
 
 @end

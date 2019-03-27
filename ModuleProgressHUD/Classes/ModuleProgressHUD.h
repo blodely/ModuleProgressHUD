@@ -90,4 +90,6 @@
 
 @interface MBProgressHUD (Additions)
 
++ (void)showHintWithFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(1, 2);
+
 @end
