@@ -76,6 +76,10 @@
 - (IBAction)showMBSuccess:(id)sender {
 	[MBProgressHUD showSuccessWithFormat:@"成功啦"];
 }
+
+- (IBAction)showMBSuccessWithTwoLabels:(id)sender {
+	[MBProgressHUD showSuccessWithTitle:@"成功消息" subtitle:@"被你发现啦"];
+}
 	
 // MARK: VIEW LIFE CYCLE
 	

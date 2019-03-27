@@ -100,14 +100,29 @@
                                     <action selector="showMBSuccess:" destination="whP-gf-Uak" eventType="touchUpInside" id="b9i-MK-abv"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVv-od-LGd">
+                                <rect key="frame" x="16" y="460" width="343" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="GYI-QS-BnU"/>
+                                </constraints>
+                                <state key="normal" title="显示双标签成功">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showMBSuccessWithTwoLabels:" destination="whP-gf-Uak" eventType="touchUpInside" id="qVM-Eq-sM1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="eVv-od-LGd" firstAttribute="trailing" secondItem="o2V-NT-gOg" secondAttribute="trailing" id="Bf4-JC-Drc"/>
                             <constraint firstItem="Byl-4a-9KU" firstAttribute="trailing" secondItem="fDr-My-9Ns" secondAttribute="trailing" id="FbL-9X-A1z"/>
                             <constraint firstAttribute="trailing" secondItem="fDr-My-9Ns" secondAttribute="trailing" constant="16" id="FuW-po-9JI"/>
                             <constraint firstItem="ysU-AX-4oG" firstAttribute="trailing" secondItem="swq-iy-Qwh" secondAttribute="trailing" id="JoP-fP-dpa"/>
                             <constraint firstItem="R8L-HX-ywb" firstAttribute="trailing" secondItem="ysU-AX-4oG" secondAttribute="trailing" id="MNB-gm-E5b"/>
                             <constraint firstItem="swq-iy-Qwh" firstAttribute="trailing" secondItem="Byl-4a-9KU" secondAttribute="trailing" id="NA0-jM-FpB"/>
+                            <constraint firstItem="eVv-od-LGd" firstAttribute="top" secondItem="o2V-NT-gOg" secondAttribute="bottom" constant="16" id="Pep-jP-0sN"/>
                             <constraint firstItem="fDr-My-9Ns" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="80" id="Tnq-M1-NLR"/>
                             <constraint firstItem="Byl-4a-9KU" firstAttribute="leading" secondItem="fDr-My-9Ns" secondAttribute="leading" id="Vgv-3s-NLP"/>
                             <constraint firstItem="Byl-4a-9KU" firstAttribute="top" secondItem="fDr-My-9Ns" secondAttribute="bottom" constant="16" id="ZMd-Df-hRX"/>
@@ -115,6 +130,7 @@
                             <constraint firstItem="o2V-NT-gOg" firstAttribute="top" secondItem="R8L-HX-ywb" secondAttribute="bottom" constant="16" id="ahq-Qi-Vrj"/>
                             <constraint firstItem="o2V-NT-gOg" firstAttribute="trailing" secondItem="R8L-HX-ywb" secondAttribute="trailing" id="c8c-Lc-h5x"/>
                             <constraint firstItem="ysU-AX-4oG" firstAttribute="leading" secondItem="swq-iy-Qwh" secondAttribute="leading" id="e49-fZ-EwX"/>
+                            <constraint firstItem="eVv-od-LGd" firstAttribute="leading" secondItem="o2V-NT-gOg" secondAttribute="leading" id="eHS-id-r4l"/>
                             <constraint firstItem="swq-iy-Qwh" firstAttribute="leading" secondItem="Byl-4a-9KU" secondAttribute="leading" id="gJx-97-Ghi"/>
                             <constraint firstItem="ysU-AX-4oG" firstAttribute="top" secondItem="swq-iy-Qwh" secondAttribute="bottom" constant="16" id="m9w-9t-BMW"/>
                             <constraint firstItem="fDr-My-9Ns" firstAttribute="leading" secondItem="TpU-gO-2f1" secondAttribute="leading" constant="16" id="uIo-yz-oQh"/>
