@@ -72,6 +72,10 @@
 - (IBAction)showHint:(id)sender {
 	[MBProgressHUD showHintWithFormat:@"这是一条消息"];
 }
+
+- (IBAction)showMBSuccess:(id)sender {
+	[MBProgressHUD showSuccessWithFormat:@"成功啦"];
+}
 	
 // MARK: VIEW LIFE CYCLE
 	

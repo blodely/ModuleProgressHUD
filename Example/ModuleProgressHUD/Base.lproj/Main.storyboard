@@ -87,6 +87,19 @@
                                     <action selector="showHint:" destination="whP-gf-Uak" eventType="touchUpInside" id="85i-cf-3ON"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2V-NT-gOg">
+                                <rect key="frame" x="16" y="400" width="343" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.58431372550000005" blue="0.0078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="hk9-na-qOq"/>
+                                </constraints>
+                                <state key="normal" title="显示MBProgressHUD成功">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showMBSuccess:" destination="whP-gf-Uak" eventType="touchUpInside" id="b9i-MK-abv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -98,6 +111,9 @@
                             <constraint firstItem="fDr-My-9Ns" firstAttribute="top" secondItem="uEw-UM-LJ8" secondAttribute="bottom" constant="80" id="Tnq-M1-NLR"/>
                             <constraint firstItem="Byl-4a-9KU" firstAttribute="leading" secondItem="fDr-My-9Ns" secondAttribute="leading" id="Vgv-3s-NLP"/>
                             <constraint firstItem="Byl-4a-9KU" firstAttribute="top" secondItem="fDr-My-9Ns" secondAttribute="bottom" constant="16" id="ZMd-Df-hRX"/>
+                            <constraint firstItem="o2V-NT-gOg" firstAttribute="leading" secondItem="R8L-HX-ywb" secondAttribute="leading" id="ZnU-4R-Icu"/>
+                            <constraint firstItem="o2V-NT-gOg" firstAttribute="top" secondItem="R8L-HX-ywb" secondAttribute="bottom" constant="16" id="ahq-Qi-Vrj"/>
+                            <constraint firstItem="o2V-NT-gOg" firstAttribute="trailing" secondItem="R8L-HX-ywb" secondAttribute="trailing" id="c8c-Lc-h5x"/>
                             <constraint firstItem="ysU-AX-4oG" firstAttribute="leading" secondItem="swq-iy-Qwh" secondAttribute="leading" id="e49-fZ-EwX"/>
                             <constraint firstItem="swq-iy-Qwh" firstAttribute="leading" secondItem="Byl-4a-9KU" secondAttribute="leading" id="gJx-97-Ghi"/>
                             <constraint firstItem="ysU-AX-4oG" firstAttribute="top" secondItem="swq-iy-Qwh" secondAttribute="bottom" constant="16" id="m9w-9t-BMW"/>
