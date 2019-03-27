@@ -68,6 +68,10 @@
 - (IBAction)showNetworkingError:(id)sender {
 	[SVProgressHUD showErrorNetworkFailure];
 }
+
+- (IBAction)showHint:(id)sender {
+	[MBProgressHUD showHintWithFormat:@"这是一条消息"];
+}
 	
 // MARK: VIEW LIFE CYCLE
 	
