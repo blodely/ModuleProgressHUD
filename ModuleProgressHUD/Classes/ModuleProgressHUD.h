@@ -90,6 +90,18 @@
 
 @interface MBProgressHUD (Additions)
 
+/**
+ SHOW A HINT ON BOTTOM OF SCREEN
+
+ @param format format string
+ */
 + (void)showHintWithFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(1, 2);
+
+/**
+ SHOW SUCCESS STRING WITH MBProgressHUD
+
+ @param format format string
+ */
++ (void)showSuccessWithFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(1, 2);
 
 @end
