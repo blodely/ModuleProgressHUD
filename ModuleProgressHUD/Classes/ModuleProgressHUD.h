@@ -84,3 +84,10 @@
 + (void)showErrorNetworkFailure;
 
 @end
+
+
+// MARK: - MBProgressHUD
+
+@interface MBProgressHUD (Additions)
+
+@end

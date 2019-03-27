@@ -194,3 +194,10 @@ NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE 
 }
 	
 @end
+
+
+// MARK: - MBProgressHUD
+
+@implementation MBProgressHUD (Additions)
+
+@end
