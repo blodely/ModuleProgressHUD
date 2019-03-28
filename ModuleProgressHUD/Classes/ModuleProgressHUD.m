@@ -347,7 +347,7 @@ NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE 
 }
 
 + (void)showErrorNetworkFailure {
-	[MBProgressHUD showHintAtBottomWithFormat:@"%@", [ModuleProgressHUD confValueFor:@"sv-networking-failure-message"]];
+	[MBProgressHUD showHintAtCenterWithFormat:@"%@", [ModuleProgressHUD confValueFor:@"sv-networking-failure-message"]];
 }
 
 @end
