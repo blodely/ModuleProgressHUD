@@ -232,7 +232,7 @@ NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE 
 	hud.label.textColor = [UIColor whiteColor];
 	hud.label.font = [UIFont systemFontOfSize:14];
 	
-	hud.label.text = [NSString stringWithFormat:@"  %@  ", ret];
+	hud.label.text = [NSString stringWithFormat:@" %@  ", ret];
 	
 	hud.offset = (CGPoint){0, HEIGHT * 0.4};
 	
@@ -269,7 +269,7 @@ NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE 
 	hud.label.textColor = [UIColor whiteColor];
 	hud.label.font = [UIFont systemFontOfSize:14];
 	
-	hud.label.text = [NSString stringWithFormat:@"  %@  ", ret];
+	hud.label.text = [NSString stringWithFormat:@" %@  ", ret];
 	
 	[hud hideAnimated:YES afterDelay:MIN(MAX((CGFloat)(((NSString *)ret).length) * 0.06 + 0.5, 1), 5)];
 }
