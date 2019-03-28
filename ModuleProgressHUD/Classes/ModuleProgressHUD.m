@@ -35,9 +35,34 @@
 NSString *const LIB_PROGRESSHUD_BUNDLE_ID = @"org.cocoapods.ModuleProgressHUD";
 NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE CHANGED
 
+
+@interface ModuleProgressHUD () {
+	NSDictionary *conf;
+}
+@end
+
 @implementation ModuleProgressHUD
-	
-+ (void)autoConfigure {
+
++ (instancetype)module {
+	static ModuleProgressHUD *sharedModuleProgressHUD;
+	static dispatch_once_t onceToken;
+	dispatch_once(&onceToken, ^{
+		sharedModuleProgressHUD = [[ModuleProgressHUD alloc] init];
+	});
+	return sharedModuleProgressHUD;
+}
+
+- (instancetype)init {
+	if (self = [super init]) {
+		[self configuration];
+	}
+	return self;
+}
+
+- (NSDictionary *)configuration {
+	if (conf != nil) {
+		return conf;
+	}
 	
 	NSString *confpath;
 	
@@ -54,13 +79,19 @@ NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE 
 	}
 	
 	// TRY TO READ APP CONFIGURATION
-	NSDictionary *conf = [NSDictionary dictionaryWithContentsOfFile:confpath];
+	conf = [NSDictionary dictionaryWithContentsOfFile:confpath];
 	
 	if (conf == nil) {
 		NSLog(@"ModuleProgressHUD ERROR\n\tCONFIGURATION FILE WAS NEVER FOUND.");
 	}
 	
-	// NSLog(@"%@", conf);
+	return conf;
+}
+	
++ (void)autoConfigure {
+	
+	// TRY TO READ APP CONFIGURATION
+	NSDictionary *conf = [[ModuleProgressHUD module] configuration];
 	
 	// CONFIGURE HUD STYLE
 	[SVProgressHUD setDefaultStyle:[conf[@"sv-default-style"][@"conf-value"] integerValue]];
@@ -77,23 +108,8 @@ NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE 
 		return nil;
 	}
 	
-	NSString *confpath;
-	
-	confpath = [[NSBundle mainBundle] pathForResource:NAME_CONF_PROGRESS_HUD ofType:@"plist"];
-	
-	if (confpath == nil
-		|| [confpath isEqualToString:@""] == YES
-		|| [[NSFileManager defaultManager] fileExistsAtPath:confpath] == NO) {
-		
-		NSLog(@"ModuleProgressHUD WARNING\n\tAPP CONFIGURATION FILE WAS NOT FOUND.\n\t%@", confpath);
-		
-		// FALLBACK TO LIB DEFAULT
-		confpath = [[NSBundle bundleWithIdentifier:LIB_PROGRESSHUD_BUNDLE_ID]
-					pathForResource:NAME_CONF_PROGRESS_HUD ofType:@"plist"];
-	}
-	
 	// TRY TO READ APP CONFIGURATION
-	NSDictionary *conf = [NSDictionary dictionaryWithContentsOfFile:confpath];
+	NSDictionary *conf = [[ModuleProgressHUD module] configuration];
 	
 	if (conf == nil) {
 		NSLog(@"ModuleProgressHUD ERROR\n\tCONFIGURATION FILE WAS NEVER FOUND.");
@@ -328,6 +344,10 @@ NSString *const NAME_CONF_PROGRESS_HUD = @"conf-progress-hud"; // SHOUND NOT BE 
 	hud.detailsLabel.text = subtitle;
 	
 	[hud hideAnimated:YES afterDelay:MIN(MAX((CGFloat)([title stringByAppendingString:subtitle].length) * 0.06 + 0.5, 1), 5)];
+}
+
++ (void)showErrorNetworkFailure {
+	[MBProgressHUD showHintAtBottomWithFormat:@"%@", [ModuleProgressHUD confValueFor:@"sv-networking-failure-message"]];
 }
 
 @end

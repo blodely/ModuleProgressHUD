@@ -67,6 +67,8 @@
 
 - (IBAction)showNetworkingError:(id)sender {
 	[SVProgressHUD showErrorNetworkFailure];
+	
+	[MBProgressHUD performSelector:@selector(showErrorNetworkFailure) withObject:nil afterDelay:2];
 }
 
 - (IBAction)showHint:(id)sender {

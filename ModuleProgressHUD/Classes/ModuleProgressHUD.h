@@ -33,6 +33,10 @@
 
 
 @interface ModuleProgressHUD : NSObject
+
++ (instancetype)module;
+
+- (NSDictionary *)configuration;
 	
 + (void)autoConfigure;
 	
@@ -118,5 +122,10 @@
  @param subtitle subtitle string
  */
 + (void)showSuccessWithTitle:(NSString *)title subtitle:(NSString *)subtitle;
+
+/**
+ SHOW A NETWORKING FAILED ERROR MB PROGRESS HUD
+ */
++ (void)showErrorNetworkFailure;
 
 @end

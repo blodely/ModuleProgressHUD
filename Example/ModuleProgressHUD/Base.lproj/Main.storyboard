@@ -67,7 +67,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="hso-AL-AR6"/>
                                 </constraints>
-                                <state key="normal" title="显示一条网络连接失败提示">
+                                <state key="normal" title="显示两种网络连接失败提示">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
