@@ -70,7 +70,7 @@
 }
 
 - (IBAction)showHint:(id)sender {
-	[MBProgressHUD showHintWithFormat:@"这是一条消息"];
+	[MBProgressHUD showHintAtBottomWithFormat:@"这是一条消息"];
 }
 
 - (IBAction)showMBSuccess:(id)sender {

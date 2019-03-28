@@ -95,7 +95,14 @@
 
  @param format format string
  */
-+ (void)showHintWithFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(1, 2);
++ (void)showHintAtBottomWithFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(1, 2);
+
+/**
+ SHOW A HINT ON CENTER OF SCREEN
+
+ @param format format string
+ */
++ (void)showHintAtCenterWithFormat:(NSString *)format, ... NS_FORMAT_FUNCTION(1, 2);
 
 /**
  SHOW SUCCESS STRING WITH MBProgressHUD
