@@ -1,7 +1,7 @@
 PODS:
   - LYCategory (1.2.41)
   - MBProgressHUD (1.1.0)
-  - ModuleProgressHUD (1.0.11):
+  - ModuleProgressHUD (1.0.12):
     - LYCategory
     - MBProgressHUD
     - SVProgressHUD (~> 2.1.2)
@@ -11,7 +11,7 @@ DEPENDENCIES:
   - ModuleProgressHUD (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - LYCategory
     - MBProgressHUD
     - SVProgressHUD
@@ -23,9 +23,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   LYCategory: f01cdedc775156219939c5560c42f9c86147105b
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
-  ModuleProgressHUD: fdfd1ff3e25e1ea275f6f8c63962e3cfbeacbf37
+  ModuleProgressHUD: c854ce3e268f064fc669c7d9dad46071fe00e465
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: f53b0faaec513afbf8167661602d53ff45db5f12
+PODFILE CHECKSUM: 674ec2fdf9eea31a5ab5a3b0b277688a984f3a06
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.9.1
